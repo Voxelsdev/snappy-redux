@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Catalog from './Catalog';
+import Cart from './Cart';
 
 const Main = React.createClass({
   render() {
     return (
       <main>
-        Main
+        <Catalog />
+        <Cart />
       </main>
     )
   }

@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './Navigations';
 
 const Header = React.createClass({
   render() {
     return (
-      <div>
-        Header
-      </div>
+      <Navbar />
     )
   }
 });

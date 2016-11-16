@@ -4,7 +4,7 @@ const Footer = React.createClass({
   render() {
     return (
       <div>
-        Footer
+        © Copyright 2016 TYLER MILLERRRRR
       </div>
     )
   }
