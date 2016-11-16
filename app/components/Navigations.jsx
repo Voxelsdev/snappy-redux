@@ -3,12 +3,14 @@ import React from 'react';
 const Navbar = React.createClass({
   render() {
     return (
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Checkout</li>
-        </ul>
-      </nav>
+      <div id="navbar" className="row">
+        <div className="two columns">
+          <p>Home</p>
+        </div>
+        <div className="two columns">
+          <p>Checkout</p>
+        </div>
+      </div>
     )
   }
 });

@@ -7,10 +7,10 @@ const Main = React.createClass({
     return (
       <main>
         <div className="row">
-          <div className="col s8">
+          <div className="eight columns">
             <Catalog />
           </div>
-          <div className="col s2">
+          <div className="two columns">
             <Cart />
           </div>
         </div>
