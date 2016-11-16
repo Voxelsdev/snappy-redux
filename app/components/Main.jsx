@@ -6,8 +6,14 @@ const Main = React.createClass({
   render() {
     return (
       <main>
-        <Catalog />
-        <Cart />
+        <div className="row">
+          <div className="col s8">
+            <Catalog />
+          </div>
+          <div className="col s2">
+            <Cart />
+          </div>
+        </div>
       </main>
     )
   }
