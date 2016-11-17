@@ -3,11 +3,15 @@ import React from 'react';
 const CartCamera = React.createClass({
   render() {
     return (
-      <div>
-        <div>
-          <p>
-            Camera.rating
-          </p>
+      // name, quantity, price
+      <div className="row cart-camera-container">
+        <div className="row">
+          <div className="six columns">
+            <p>Quantity</p>
+          </div>
+          <div className="six columns">
+            <p>{this.props.camera.quantity}</p>
+          </div>
         </div>
         <div>
           <p>

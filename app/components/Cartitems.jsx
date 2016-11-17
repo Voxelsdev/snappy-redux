@@ -3,9 +3,11 @@ import CartCamera from './Cartcamera'
 
 const CartItems = React.createClass({
   render() {
-    const temparr = [1,2,3];
-    const cameras = temparr.map(camera => {
-      return <CartCamera />
+    const cameras = this.props.cart.map((camera, index) => {
+      return <CartCamera
+      camera={camera}
+      key={index}
+      />
     });
 
     return (

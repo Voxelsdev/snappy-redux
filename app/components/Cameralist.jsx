@@ -3,8 +3,12 @@ import Camera from './Camera';
 
 const CameraList = React.createClass({
   render() {
-    const temparr = [1,2,3];
-    const camerasList = temparr.map(camera => <Camera />);
+    const camerasList = this.props.cameras.map((camera, index) =>
+    <Camera
+      addToCart={this.props.addToCart}
+      camera={camera}
+      key={index}
+    />);
 
     return (
       <div>{camerasList}</div>

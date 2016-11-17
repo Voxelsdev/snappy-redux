@@ -5,7 +5,8 @@ const Cart = React.createClass({
   render() {
     return (
       <div>
-        <CartItems />
+        <CartItems
+        cart={this.props.cart}/>
         <div>
           <p>
             Subtotal: subtotal here

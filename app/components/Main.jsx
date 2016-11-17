@@ -8,10 +8,15 @@ const Main = React.createClass({
       <main>
         <div className="row">
           <div className="eight columns">
-            <Catalog />
+            <Catalog
+              cameras={this.props.cameras}
+              addToCart={this.props.addToCart}
+            />
           </div>
           <div className="two columns">
-            <Cart />
+            <Cart
+              cart={this.props.cart}
+            />
           </div>
         </div>
       </main>

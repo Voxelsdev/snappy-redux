@@ -7,7 +7,10 @@ const Catalog = React.createClass({
     return (
       <div>
         <Filters />
-        <CameraList />
+        <CameraList
+          addToCart={this.props.addToCart}
+          cameras={this.props.cameras}
+        />
       </div>
     )
   }
