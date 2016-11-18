@@ -17,6 +17,11 @@ main {
   border-color: #b00207;
 }
 
+.add-to-cart:visited {
+  color: #b00207;
+  border-color: #760109;
+}
+
 .nav-col {
   height: 50px;
 }
@@ -55,6 +60,33 @@ main {
 .button:hover {
   border-color: #eee;
   color: #fff;
+}
+
+.cart-title, .cart-quantity, .cart-price {
+  padding-left: 5px;
+}
+
+.cart-title, .cart-info {
+  height: 49px;
+  line-height: 49px;
+}
+
+.remove-from-cart {
+  background-color: #ddd;
+  border-top: 1px solid #bbb;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+}
+
+.remove-from-cart:hover {
+  background-color: #eee;
+}
+
+.cart-camera-container {
+  border: 1px solid #bbb;
+  border-radius: 4px;
 }
 
 #navbar {

@@ -10,6 +10,7 @@ const Catalog = React.createClass({
         <CameraList
           addToCart={this.props.addToCart}
           cameras={this.props.cameras}
+          handleCost={this.props.handleCost}
         />
       </div>
     )

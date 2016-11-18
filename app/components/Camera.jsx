@@ -3,6 +3,7 @@ import React from 'react';
 const Camera = React.createClass({
   handleClick() {
     this.props.addToCart(this.props.camera);
+    this.props.handleCost();
   },
 
   render() {

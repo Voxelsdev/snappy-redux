@@ -8,6 +8,7 @@ const CameraList = React.createClass({
       addToCart={this.props.addToCart}
       camera={camera}
       key={index}
+      handleCost={this.props.handleCost}
     />);
 
     return (
