@@ -5,7 +5,10 @@ const Cart = React.createClass({
   render() {
     return (
       <div>
-        <CartItems cart={this.props.cart}/>
+        <CartItems
+          cart={this.props.cart}
+          handleDelete={this.props.handleDelete}
+        />
         <div>
           <p>
             Subtotal: {this.props.costs.subtotal}

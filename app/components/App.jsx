@@ -16,5 +16,3 @@ const App = React.createClass({
 });
 
 export default App;
-
-// http://pastebin.com/w4Gn18Zi

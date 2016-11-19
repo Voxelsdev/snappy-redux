@@ -1,9 +1,9 @@
 import React from 'react';
 
 const CartCamera = React.createClass({
-  // handleRemoveAllFromCart() {
-  //   this.props.handleRemoveAllFromCart(this.props.cart)
-  // },
+  handleRemoveAllFromCart() {
+    this.props.handleDelete(this.props.camera);
+  },
 
   render() {
     return (
@@ -32,7 +32,9 @@ const CartCamera = React.createClass({
         </div>
         <div className="row">
           <div className="twelve columns">
-            <button className="u-full-width remove-from-cart">Remove</button>
+            <button className="u-full-width remove-from-cart"
+                    onClick={this.handleRemoveAllFromCart}>Remove
+            </button>
           </div>
         </div>
       </div>

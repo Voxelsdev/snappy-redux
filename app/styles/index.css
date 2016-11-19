@@ -62,6 +62,9 @@ main {
   color: #fff;
 }
 
+.cart {
+}
+
 .cart-title, .cart-quantity, .cart-price {
   padding-left: 5px;
 }

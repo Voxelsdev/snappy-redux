@@ -68,6 +68,19 @@ const Main = React.createClass({
     };
   },
 
+  handleDelete(camera) {
+    let cart = this.state.cart;
+
+    for (let removing of cart) {
+      if (camera === removing) {
+        removing.qty > 1 ? removing.qty-- : cart.splice(cart.indexOf(removing), 1);
+        console.log(cart);
+      }
+    }
+
+    this.setState({ cart });
+  },
+
   render() {
     const { subtotal, tax, total } = this.handleCost();
     const costs = { subtotal, tax, total };
@@ -86,6 +99,7 @@ const Main = React.createClass({
             <Cart
               cart={this.state.cart}
               costs={costs}
+              handleDelete={this.handleDelete}
             />
           </div>
         </div>
